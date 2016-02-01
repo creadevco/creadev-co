@@ -34,6 +34,9 @@
     font-size:17px;
     line-height:20px;
 }
+.white{
+  color: white;
+}
 a {
     color:#181A1C;
     text-decoration: none;
@@ -89,9 +92,9 @@ p {
     transition: border-color 1s ease;
 }
 .navbar .nav > li:hover> a, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
-    border: 1px solid #FECE1A;
+    border: 1px solid #20638E;
     color: #fff;
-    background-color: #181A1C;
+    background-color: #2980b9;
     transition: border-color 1s ease;
 }
 .nav-pills {
@@ -373,13 +376,13 @@ p {
     color:#FFF;
 }
 .secondary-section {
-    background:#FECE1A;
+    background:#2980b9;
 }
 .secondary-section .title {
-    border-bottom: 1px solid #181A1C;
+    border-bottom: 1px solid #FFF;
 }
 .secondary-section h1, .secondary-section .title p {
-    color: #181A1C;
+    color: #FFF;
 }
 /* Third section use bacground image */
 .third-section {
