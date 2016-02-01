@@ -285,7 +285,7 @@ p {
     z-index:4;
 }
 .thumbnail h3 {
-    color: #FECE1A;
+    color: #2980b9;
     margin-top:10px;
     font-size:20px;
 }
@@ -825,7 +825,7 @@ p {
     right:20px;
 	border:1px solid #fff;
     display:none;
-    background: #FECE1A;
+    background: #20638E;
 }
 .scrollup > a {
     position:relative;
