@@ -1,0 +1,22 @@
+{
+  "name": "creadev",
+  "version": "0.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roadev/creadev-co.git"
+  },
+  "author": "Juan Roa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roadev/creadev-co/issues"
+  },
+  "homepage": "https://github.com/roadev/creadev-co#readme",
+  "dependencies": {
+    "bower": "^1.7.7"
+  }
+}
