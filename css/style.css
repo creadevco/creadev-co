@@ -364,13 +364,13 @@ p {
     background:#181A1C;
 }
 .primary-section .triangle {
-    border-top: 40px solid #FECE1A;
+    border-top: 40px solid #2980b9;
 }
 .primary-section .title {
     border-bottom: 1px solid #FFF;
 }
 .primary-section, .primary-section .title p, .primary-section h3 {
-    color: #FECE1A;
+    color: #2980b9;
 }
 .primary-section h1 {
     color:#FFF;
