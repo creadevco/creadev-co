@@ -112,6 +112,9 @@
     left: 110%;
     /*60%*/
 }
+.da-slide .da-img-ios{
+  top: 27px;
+}
 .da-slide .da-link {
     top: 340px;
     margin:0;

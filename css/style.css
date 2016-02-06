@@ -832,6 +832,17 @@ p {
     top:7px;
     color:#fff;
 }
+
+
+/* CSS iOS devices modifiers*/
+.marvel-device.ipad {
+    width: 215px;
+    height: 300px;
+    padding: 81px 20px;
+}
+/* CSS iOS devices modifiers*/
+
+
 /*
 4 Responsible
 ********************************************************************/
