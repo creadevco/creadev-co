@@ -440,7 +440,7 @@ p {
 .project-title {
     margin-top:15px;
     margin-bottom:15px;
-    border-bottom:1px solid #FECE1A;
+    border-bottom:1px solid #2980b9;
 }
 .project-title h3 {
     float:left;
@@ -449,11 +449,11 @@ p {
     width:80%;
 }
 .project-title .close {
-    color: #FECE1A;
+    color: #2980b9;
     margin-top:10px;
 }
 .project-info span, .project-title h3 {
-    color:#FECE1A;
+    color:#2980b9;
 }
 .project-info {
     font-weight:100;
