@@ -1,14 +1,14 @@
 /**
- * BxSlider v4.0 - Fully loaded, responsive content slider
- * http://bxslider.com
- *
- * Written by: Steven Wanderski, 2012
- * http://stevenwanderski.com
- * (while drinking Belgian ales and listening to jazz)
- *
- * CEO and founder of bxCreative, LTD
- * http://bxcreative.com
- */
+* BxSlider v4.0 - Fully loaded, responsive content slider
+* http://bxslider.com
+*
+* Written by: Steven Wanderski, 2012
+* http://stevenwanderski.com
+* (while drinking Belgian ales and listening to jazz)
+*
+* CEO and founder of bxCreative, LTD
+* http://bxcreative.com
+*/
 
 
 /** RESET AND LAYOUT
@@ -22,38 +22,38 @@
 }
 
 .bx-wrapper ul{
-    margin:0;
-    
+	margin:0;
+
 }
 
 .bx-wrapper .circle-border{
-    border:3px solid #cacaca;
+	border:3px solid #cacaca;
 }
 
 .bx-wrapper img {
 	width:200px;
-    text-align:center;
-    margin-left: auto;
-    margin-right: auto;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
-    opacity:1;
-    
+	opacity:1;
+
 }
 
 .bxslider{
-    height:100%;
+	height:100%;
 }
 
 .bx-wrapper p {
-    font-size:20px;
-    line-height:22px;
-    margin:10px;
+	font-size:20px;
+	line-height:22px;
+	margin:10px;
 }
 
 .bx-viewport{
-    opacity:1;
+	opacity:1;
 }
-    
+
 /** THEME
 ===================================*/
 
@@ -134,11 +134,11 @@
 }
 
 
-   
+
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-       
+
 
 	background: url(../images/Left-grey.png) no-repeat center;
 }

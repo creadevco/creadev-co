@@ -20,17 +20,17 @@ var runSequence = require('run-sequence');
 
 gulp.task("sass", function () {
   console.log("compiling scss")
-  return sass("src/scss/style.scss")
+  return sass("app/scss/style.scss")
   .on("error", sass.logError)
   // Writes converted css to dest url
-  .pipe(gulp.dest("src/css"))
+  .pipe(gulp.dest("app/css"))
   .pipe(browserSync.stream({match: "dist/*.css"}))
 });
 
 /*
  * PHP gulp-server - unoptimized...
 */
-var php = require('gulp-connect-php');
+// var php = require('gulp-connect-php');
 
 gulp.task('php', function() {
   php.server({}, function (){
@@ -59,26 +59,26 @@ gulp.task("watch", function(){
   * Listens changes for all .html files and reloads the browser
   * In the case of spanish html files, it executes de min task before.
   */
-  gulp.watch("src/*.html", ["min", browserSync.reload]);
+  gulp.watch("app/*.html", ["min", browserSync.reload]);
   /**
   * Listens changes for all .scss files and runs the sass and min tasks
   * also, it reloads the browser after that.
   */
-  gulp.watch("src/scss/*.scss", ["sass", browserSync.reload]);
-  gulp.watch("src/scss/*.scss", ["min", browserSync.reload]);
+  gulp.watch("app/scss/*.scss", ["sass", browserSync.reload]);
+  gulp.watch("app/scss/*.scss", ["min", browserSync.reload]);
   /**
   * Listens changes for all english .html files and runs the en task
   */
-  gulp.watch("src/en/*.html", ["en", browserSync.reload]);
+  gulp.watch("app/en/*.html", ["en", browserSync.reload]);
   /**
   * Listens changes for all .php files and reloads the browser
   * In the case of spanish html files, it executes de minphp task before.
   */
-  gulp.watch('src/*.php', ["minphp", browserSync.reload]);
+  gulp.watch('app/*.php', ["minphp", browserSync.reload]);
   /**
   * Listens changes for all english .php files and runs the en task
   */
-  gulp.watch('src/en/*.php', ["enphp", browserSync.reload]);
+  gulp.watch('app/en/*.php', ["enphp", browserSync.reload]);
 
 });
 
@@ -93,10 +93,10 @@ gulp.task('y', function(callback) {
 
 // Autoprefixes style.css
 
-var autoprefixer = require('gulp-autoprefixer');
+// var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('autoprefixer', function () {
-  return gulp.src('src/css/style.css')
+  return gulp.src('app/css/style.css')
   .pipe(autoprefixer({
     browsers: ['last 2 versions', 'ie 9'],
     cascade: false
@@ -111,7 +111,7 @@ gulp.task('autoprefixer', function () {
 var imagemin = require('gulp-imagemin');
 
 gulp.task('images', function(){
-  return gulp.src('src/assets/images/**/*.+(png|jpg|gif|svg)')
+  return gulp.src('app/assets/images/**/*.+(png|jpg|gif|svg)')
   .pipe(imagemin())
   .pipe(gulp.dest('dist/assets/images'))
 });
@@ -125,7 +125,7 @@ var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 
 gulp.task('min', function(){
-  return gulp.src('src/*.html')
+  return gulp.src('app/*.html')
   .pipe(useref())
   // Minifies only if it's a JS file
   .pipe(gulpIf('*.js', uglify({mangle: false})))
@@ -138,7 +138,7 @@ gulp.task('min', function(){
  * CSS and JS minification and concatenation for PHP
  */
 gulp.task('minphp', function(){
-  return gulp.src('src/*.php')
+  return gulp.src('app/*.php')
   .pipe(useref())
   .pipe(gulpIf('*.js', uglify()))
   // Minifies only if it's a CSS file
@@ -148,14 +148,14 @@ gulp.task('minphp', function(){
 
 // It just copies the english html files to dist
 gulp.task('en', function(){
-  return gulp.src('src/en/*.html')
+  return gulp.src('app/en/*.html')
   .pipe(useref())
   .pipe(gulp.dest('dist/en'))
 });
 
 // It just copies the english php files to dist
 gulp.task('enphp', function(){
-  return gulp.src('src/en/*.php')
+  return gulp.src('app/en/*.php')
   .pipe(useref())
   .pipe(gulp.dest('dist/en'))
 });
@@ -163,6 +163,6 @@ gulp.task('enphp', function(){
 
 // Copying fonts to dist
 gulp.task('fonts', function() {
-  return gulp.src('src/fonts/**/*')
+  return gulp.src('app/fonts/**/*')
   .pipe(gulp.dest('dist/fonts'))
 })
