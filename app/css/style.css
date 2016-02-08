@@ -42,7 +42,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #FECE1A;
+  color: #2980b9;
   text-decoration:none;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -388,7 +388,7 @@ p {
 .third-section {
   padding-bottom: 70px;
   background: #181A1C url(../assets/images/brand-bg.png) no-repeat center;
-  border-top:6px solid #FECE1A;
+  border-top:6px solid #2980b9;
 }
 .third-section .container {
   padding-top:20px;
@@ -396,7 +396,7 @@ p {
 }
 .third-section .title {
   border-bottom: 1px solid #A1AAB7;
-  color: #FECE1A;
+  color: #2980b9;
 }
 .sub-section {
   margin-top:30px;
@@ -543,7 +543,7 @@ SKILLS BAR
   border:1px solid white;
 }
 .client-slider img:hover {
-  background-color:#FECE1A;
+  background-color:#2980b9;
 }
 .client-nav {
   list-style:none;
@@ -557,7 +557,7 @@ SKILLS BAR
 .client-nav li a {
   display:inherit;
   padding:5px;
-  background:#FECE1A;
+  background:#2980b9;
   border-radius:3px;
   width:20px;
   height:20px;
@@ -806,7 +806,7 @@ SKILLS BAR
 }
 
 .footer a{
-  color:#FECE1A;
+  color:#2980b9;
 }
 
 .footer a:hover, .footer a:focus{
