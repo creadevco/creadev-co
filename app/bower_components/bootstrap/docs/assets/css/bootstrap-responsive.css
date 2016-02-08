@@ -230,6 +230,10 @@
             box-sizing: border-box;
   }
   .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  /*Custom*/
+  .team [class*="span"]:first-child {
     margin-left: 17%;
   }
   .row-fluid .controls-row [class*="span"] + [class*="span"] {
