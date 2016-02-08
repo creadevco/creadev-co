@@ -230,7 +230,7 @@
             box-sizing: border-box;
   }
   .row-fluid [class*="span"]:first-child {
-    margin-left: 0;
+    margin-left: 17%;
   }
   .row-fluid .controls-row [class*="span"] + [class*="span"] {
     margin-left: 2.564102564102564%;
