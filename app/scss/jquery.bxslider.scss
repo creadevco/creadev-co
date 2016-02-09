@@ -1,0 +1,192 @@
+//colors
+$color_pumice_approx: #cacaca;
+$white: #fff;
+$color_storm_dust_approx: #666;
+$black: #000;
+$color_fuscous_gray_75_approx: rgba(80, 80, 80, 0.75);
+
+//fonts
+$font_0: "Arial";
+$font_1: "Arial";
+
+//urls
+$url_0: url("../images/bx_loader.gif");
+$url_1: url("../images/Left-grey.png");
+$url_2: url("../images/Right-grey.png");
+$url_3: url("images/controls.png");
+
+//@extend-elements
+//original selectors
+//.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto
+%extend_1 {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+
+//original selectors
+//.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item
+%extend_2 {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  *zoom: 1;
+  ul {
+    margin: 0;
+  }
+  .circle-border {
+    border: 3px solid $color_pumice_approx;
+  }
+  img {
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 1;
+  }
+  p {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 10px;
+  }
+  .bx-viewport {
+    left: -5px;
+  }
+  .bx-pager {
+    @extend %extend_1;
+    text-align: center;
+    font-size: .85em;
+    font-family: $font_0;
+    font-weight: bold;
+    color: $color_storm_dust_approx;
+    padding-top: 20px;
+    .bx-pager-item {
+      @extend %extend_2;
+    }
+    &.bx-default-pager a {
+      background: $color_storm_dust_approx;
+      text-indent: -9999px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      outline: 0;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+      border-radius: 5px;
+      &:hover {
+        background: $black;
+      }
+      &.active {
+        background: $black;
+      }
+    }
+  }
+  .bx-controls-auto {
+    @extend %extend_1;
+    text-align: center;
+    .bx-controls-auto-item {
+      @extend %extend_2;
+    }
+    .bx-start {
+      display: block;
+      text-indent: -9999px;
+      width: 10px;
+      height: 11px;
+      outline: 0;
+      background: $url_3 -86px -11px no-repeat;
+      margin: 0 3px;
+      &:hover {
+        background-position: -86px 0;
+      }
+      &.active {
+        background-position: -86px 0;
+      }
+    }
+    .bx-stop {
+      display: block;
+      text-indent: -9999px;
+      width: 9px;
+      height: 11px;
+      outline: 0;
+      background: $url_3 -86px -44px no-repeat;
+      margin: 0 3px;
+      &:hover {
+        background-position: -86px -33px;
+      }
+      &.active {
+        background-position: -86px -33px;
+      }
+    }
+  }
+  .bx-loading {
+    min-height: 50px;
+    background: $url_0 center center no-repeat $white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 800;
+  }
+  .bx-prev {
+    left: 10px;
+    background: $url_1 no-repeat center;
+  }
+  .bx-next {
+    right: 10px;
+    background: $url_2 no-repeat center;
+  }
+  .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $color_storm_dust_approx\9;
+    background: $color_fuscous_gray_75_approx;
+    width: 100%;
+    span {
+      color: $white;
+      font-family: $font_1;
+      display: block;
+      font-size: .85em;
+      padding: 10px;
+    }
+  }
+  .bx-controls-direction a {
+    position: absolute;
+    top: 0;
+    outline: 0;
+    width: 45px;
+    height: 100%;
+    text-indent: -9999px;
+    z-index: 800;
+    &.disabled {
+      display: none;
+    }
+  }
+  .bx-controls.bx-has-controls-auto.bx-has-pager {
+    .bx-pager {
+      text-align: left;
+      width: 80%;
+    }
+    .bx-controls-auto {
+      right: 0;
+      width: 35px;
+    }
+  }
+}
+.bxslider {
+  height: 100%;
+}
+.bx-viewport {
+  opacity: 1;
+}
