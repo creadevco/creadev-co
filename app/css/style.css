@@ -221,7 +221,7 @@ p {
 }
 .button-sp, .button-sp:visited, .button-sp:focus {
   border:none;
-  background-color:#FECE1A;
+  background-color:#2980b9;
   color:#181A1C;
 }
 .button-sp:hover, .button-sp:active {
@@ -231,10 +231,10 @@ p {
 .button-ps, .button-ps:visited, .button-ps:focus {
   border:none;
   background-color:#181A1C;
-  color:#FECE1A;
+  color:#2980b9
 }
 .button-ps:hover, .button-ps:active {
-  background-color:#FECE1A;
+  background-color:#2980b9;
   color:#181A1C;
 }
 /*
@@ -626,7 +626,7 @@ SKILLS BAR
   background-color:#181A1C;
   text-transform:uppercase;
   text-align: center;
-  color:#FECE1A;
+  color:#2980b9;
   padding:40px 0px;
   font-size: 36px;
   margin-top:0px;
@@ -914,4 +914,8 @@ SKILLS BAR
   .price-column, .testimonial {
     margin-top:30px;
   }
+}
+
+.strong{
+  font-weight: bold;
 }
