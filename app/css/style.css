@@ -777,6 +777,7 @@ SKILLS BAR
   font-size:17px;
 }
 .message-btn:hover {
+  color: white;
   background-color:#2980b9;
 }
 .contact-info {
