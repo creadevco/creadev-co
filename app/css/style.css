@@ -903,6 +903,18 @@ SKILLS BAR
   .newsletter form {
     text-align:center;
   }
+
+  .marvel-device.ipad {
+    width: 132px;
+    height: 166px;
+    padding: 73px 15px;
+    margin-top: -22%;
+  }
+  #creadev_intro {
+    width: 132px;
+    margin-top: 33%;
+  }
+
 }
 @media (max-width: 767px) {
   .info-mail {
