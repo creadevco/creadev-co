@@ -948,6 +948,12 @@ SKILLS BAR
   }
 }
 
+@media (max-width: 480px) {
+  .creadev_youtube_video {
+    left: 0;
+  }
+}
+
 .strong{
   font-weight: bold;
 }
