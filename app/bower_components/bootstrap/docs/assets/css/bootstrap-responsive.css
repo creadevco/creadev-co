@@ -801,6 +801,9 @@
   .uneditable-input.span1 {
     width: 28px;
   }
+  .team [class*="span"]:first-child {
+    margin-left: 17%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -951,6 +954,12 @@
   .carousel-caption {
     position: static;
   }
+
+  /*Custom */
+  .team [class*="span"]:first-child {
+    margin-left: 0%;
+  }
+
 }
 
 @media (max-width: 979px) {
