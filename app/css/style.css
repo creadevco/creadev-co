@@ -843,6 +843,20 @@ SKILLS BAR
 }
 /* CSS iOS devices modifiers*/
 
+.creadev_youtube_container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.creadev_youtube_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*.creadev_intro iframe, embed{
   width: 300px;
 }*/
@@ -916,19 +930,6 @@ SKILLS BAR
   #creadev_intro {
     width: 132px;
     margin-top: 33%;
-  }
-  .creadev_youtube_container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-  }
-  .creadev_youtube_video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
   }
 
 }
