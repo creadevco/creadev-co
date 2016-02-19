@@ -64,6 +64,19 @@
         nextText: '<i class="icon-right-open"></i>'
     });
 
+    $('#payment-slider').bxSlider({
+        pager: false,
+        minSlides: 1,
+        maxSlides: 5,
+        moveSlides: 2,
+        slideWidth: 210,
+        slideMargin: 25,
+        prevSelector: $('#client-prev'),
+        nextSelector: $('#client-next'),
+        prevText: '<i class="icon-left-open"></i>',
+        nextText: '<i class="icon-right-open"></i>'
+    });
+
 
     $('input, textarea').placeholder();
 
