@@ -71,8 +71,8 @@
         moveSlides: 2,
         slideWidth: 210,
         slideMargin: 25,
-        prevSelector: $('#client-prev'),
-        nextSelector: $('#client-next'),
+        prevSelector: $('#payment-prev'),
+        nextSelector: $('#payment-next'),
         prevText: '<i class="icon-left-open"></i>',
         nextText: '<i class="icon-right-open"></i>'
     });
