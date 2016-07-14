@@ -1,6 +1,7 @@
 /** gulpfile.js
-* Author: Juan Roa
+* Author: Juan Roa, CreaDev.co
 * Copyright (C) 2016 Juan Roa
+* Version 1.5.0
 * Author URL: http://juanroa.me
 * Free to use and distribute under the MIT License
 * https://opensource.org/licenses/MIT
