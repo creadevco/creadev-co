@@ -1,6 +1,7 @@
 /** gulpfile.js
-* Author: Juan Roa
+* Author: Juan Roa, CreaDev.co
 * Copyright (C) 2016 Juan Roa
+* Version 1.5.0
 * Author URL: http://juanroa.me
 * Free to use and distribute under the MIT License
 * https://opensource.org/licenses/MIT
@@ -13,6 +14,8 @@ var sass = require("gulp-ruby-sass");
 var browserSync = require("browser-sync");
 // Requires run-sequence to avoid concurrency in some tasks...
 var runSequence = require('run-sequence');
+//requires htmlmin
+var htmlmin = require('gulp-htmlmin');
 
 /**
 * Compile with gulp-ruby-sass
@@ -32,16 +35,16 @@ gulp.task("sass", function () {
 */
 // var php = require('gulp-connect-php');
 
-gulp.task('php', function() {
-  php.server({}, function (){
-    browserSync({
-      hostname: 'localhost',
-      port: 8001,
-      base: 'dist'
-    });
-  });
+// gulp.task('php', function() {
+//   php.server({}, function (){
+//     browserSync({
+//       hostname: 'localhost',
+//       port: 8001,
+//       base: 'dist'
+//     });
+//   });
 
-});
+// });
 
 /*
 * Static Server + watching scss/html files
@@ -124,6 +127,12 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 
+gulp.task('minify', function() {
+  return gulp.src('app/*.html')
+    .pipe(htmlmin({collapseWhitespace: true, removeComments: true}))
+    .pipe(gulp.dest('dist'))
+});
+
 gulp.task('min', function(){
   return gulp.src('app/*.html')
   .pipe(useref())
@@ -131,6 +140,7 @@ gulp.task('min', function(){
   .pipe(gulpIf('*.js', uglify({mangle: false})))
   // Minifies only if it's a CSS file
   .pipe(gulpIf('*.css', cssnano()))
+  .pipe(gulpIf('*.html', htmlmin({collapseWhitespace: true, removeComments: true})))
   .pipe(gulp.dest('dist'))
 });
 
