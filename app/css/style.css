@@ -1245,25 +1245,13 @@ width: 300px;
 /* Technologies - Animation */
 .icon-cards {
   position: inherit;
-  margin: 10% 0 0 29%;
+  margin: 10% 0 0 20%;
   top: 50%;
   left: 50%;
   width: 190px;
   height: 190px;
   perspective: 800px;
   transform: translate(-50%, -50%);
-}
-.icon-cards--2 {
-  margin-left: 34%;
-}
-.icon-cards--3 {
-  margin-left: 17%;
-}
-.icon-cards--4 {
-  margin-left: 23.5%;
-}
-.icon-cards--5 {
-  margin-left: 24%;
 }
 .icon-cards__content {
   position: absolute;
@@ -1303,12 +1291,21 @@ width: 300px;
   background: url("../assets/images/tech/Logos-tecnologias-js.jpg");
 }
 .icon-cards__item--3:nth-child(1) {
-  background: url("../assets/images/tech/Logos-tecnologias-after.jpg");
+  background: url("../assets/images/tech/Logos-tecnologias-bootstrap.jpg");
 }
 .icon-cards__item--3:nth-child(2) {
-  background: url("../assets/images/tech/Logos-tecnologias-illustrator.jpg");
+  background: url("../assets/images/tech/Logos-tecnologias-wordpress.jpg");
 }
 .icon-cards__item--3:nth-child(3) {
+  background: url("../assets/images/tech/Logos-tecnologias-sass.jpg");
+}
+.icon-cards__item--design:nth-child(1) {
+  background: url("../assets/images/tech/Logos-tecnologias-after.jpg");
+}
+.icon-cards__item--design:nth-child(2) {
+  background: url("../assets/images/tech/Logos-tecnologias-illustrator.jpg");
+}
+.icon-cards__item--design:nth-child(3) {
   background: url("../assets/images/tech/Logos-tecnologias-3dsmax.png");
 }
 .icon-cards__item--4:nth-child(1) {
@@ -1327,7 +1324,7 @@ width: 300px;
   background: url("../assets/images/tech/Logos-tecnologias-android.jpg");
 }
 .icon-cards__item--5:nth-child(3) {
-  background: url("../assets/images/tech/Logos-tecnologias-sass.jpg");
+  background: url("../assets/images/tech/Logos-tecnologias-photoshop.jpg");
 }
 
 
