@@ -978,7 +978,7 @@ SKILLS BAR
 }
 
 .icon-link.fill.instagram {
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 }
 .icon-link.fill.instagram:hover {
   background: #fff;
@@ -1266,7 +1266,7 @@ SKILLS BAR
   border-radius: 6px;
 }
 .icon-cards__item:nth-child(1) {
-  background: url("../assets/images/tech/Logos-tecnologias-ionic.jpg");
+  background: url("../assets/images/tech/Logos-tecnologias-ruby-rails.jpg");
   transform: rotateY(0) translateZ(182px);
 }
 .icon-cards__item:nth-child(2) {
@@ -1274,7 +1274,7 @@ SKILLS BAR
   transform: rotateY(120deg) translateZ(182px);
 }
 .icon-cards__item:nth-child(3) {
-  background: url("../assets/images/tech/Logos-tecnologias-ruby-rails.jpg");
+  background: url("../assets/images/tech/Logos-tecnologias-django.jpg");
   transform: rotateY(240deg) translateZ(182px);
 }
 
@@ -1294,4 +1294,3 @@ SKILLS BAR
   }
 }
 /* Technologies - Animation */
-
