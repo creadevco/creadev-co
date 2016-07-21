@@ -912,66 +912,88 @@
                 </div>
             </div>
         </div>
-
         <div id="price" class="section secondary-section">
-          <div class="container">
-            <figure class="icon-cards">
+          <div class="row">
+            <figure class="col-md-5 icon-cards">
               <div class="icon-cards__content">
                 <div class="icon-cards__item"></div>
                 <div class="icon-cards__item"></div>
                 <div class="icon-cards__item"></div>
               </div>
             </figure>
-            <figure class="icon-cards icon-cards__2">
-              <div class="icon-cards__content__2">
-                <div class="icon-cards__item icon-cards__item__2"></div>
-                <div class="icon-cards__item icon-cards__item__2"></div>
-                <div class="icon-cards__item icon-cards__item__2"></div>
+            <figure class="col-md-5 icon-cards icon-cards--2">
+              <div class="icon-cards__content">
+                <div class="icon-cards__item icon-cards__item--2"></div>
+                <div class="icon-cards__item icon-cards__item--2"></div>
+                <div class="icon-cards__item icon-cards__item--2"></div>
               </div>
             </figure>
-            <div class="centered">
-              <!-- <p class="price-text">We Offer Custom Plans. Contact Us For More Info.</p> -->
-              <a href="#contact" class="button">Contáctanos</a>
+          </div>
+          <div class="row">
+            <figure class="col-md-4 icon-cards icon-cards--3">
+              <div class="icon-cards__content">
+                <div class="icon-cards__item icon-cards__item--3"></div>
+                <div class="icon-cards__item icon-cards__item--3"></div>
+                <div class="icon-cards__item icon-cards__item--3"></div>
+              </div>
+            </figure>
+            <figure class="col-md-4 icon-cards icon-cards--4">
+              <div class="icon-cards__content">
+                <div class="icon-cards__item icon-cards__item--4"></div>
+                <div class="icon-cards__item icon-cards__item--4"></div>
+                <div class="icon-cards__item icon-cards__item--4"></div>
+              </div>
+            </figure>
+            <figure class="col-md-4 icon-cards icon-cards--5">
+              <div class="icon-cards__content">
+                <div class="icon-cards__item icon-cards__item--5"></div>
+                <div class="icon-cards__item icon-cards__item--5"></div>
+                <div class="icon-cards__item icon-cards__item--5"></div>
+              </div>
+            </figure>
+          </div>
+            
+          <div class="centered">
+            <a href="#contact" class="button">Contáctanos</a>
+          </div>
+          
+        </div>
+
+        <div class="section third-section" id="payments">
+          <div class="container centered">
+            <div class="sub-section">
+              <div class="title clearfix">
+                <div class="pull-left">
+                  <h3>Medios de pago</h3>
+                </div>
+                <ul class="client-nav pull-right">
+                  <li id="payment-prev"></li>
+                  <li id="payment-next"></li>
+                </ul>
+              </div>
+              <ul class="row client-slider payment-slider" id="payment-slider">
+                <li>
+                  <a href="http://grupobancolombia.com" target="_blank">
+                    <img src="assets/images/bancolombia.png" alt="client logo 1">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.queesbitcoin.info/" target="_blank">
+                    <img src="assets/images/bitcoin.png" alt="client logo 2">
+                  </a>
+                </li>
+                <li>
+                  <a href="http://payu.com.co" target="_blank">
+                    <img src="assets/images/payu.png" alt="client logo 3">
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- Newsletter section start -->
-        <div class="section third-section" id="payments">
-            <div class="container centered">
-                <div class="sub-section">
-                    <div class="title clearfix">
-                        <div class="pull-left">
-                            <h3>Medios de pago</h3>
-                        </div>
-                        <ul class="client-nav pull-right">
-                            <li id="payment-prev"></li>
-                            <li id="payment-next"></li>
-                        </ul>
-                    </div>
-                    <ul class="row client-slider" id="payment-slider">
-                        <li>
-                            <a href="http://grupobancolombia.com" target="_blank">
-                                <img src="assets/images/bancolombia.png" alt="client logo 1">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.queesbitcoin.info/" target="_blank">
-                                <img src="assets/images/bitcoin.png" alt="client logo 2">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://payu.com.co" target="_blank">
-                                <img src="assets/images/payu.png" alt="client logo 3">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- Newsletter section end -->
         <!-- Contact section start -->
         <div id="contact" class="contact">
-            <div class="section secondary-section">
+          <div class="section secondary-section">
                 <div class="container">
                     <div class="title">
                         <h1>Contáctanos</h1>
@@ -996,6 +1018,7 @@
             </div>
         </div>
         <!-- Contact section end -->
+
         <!-- Footer section start -->
         <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
         <footer class="footer">
@@ -1025,7 +1048,6 @@
                 <i class="icon-up-open"></i>
             </a>
         </div>
-
         <!-- ScrollUp button end -->
 
         <!--build:js js/main.min.js-->

@@ -545,6 +545,10 @@ SKILLS BAR
 .client-slider img:hover {
   background-color:#2980b9;
 }
+.payment-slider img:hover {
+  background-color:white;
+  opacity: 0.8;
+}
 .client-nav {
   list-style:none;
   margin-top:10px;
@@ -1241,7 +1245,7 @@ width: 300px;
 /* Technologies - Animation */
 .icon-cards {
   position: inherit;
-  margin: 10% 0 0 50%;
+  margin: 10% 0 0 29%;
   top: 50%;
   left: 50%;
   width: 190px;
@@ -1249,18 +1253,19 @@ width: 300px;
   perspective: 800px;
   transform: translate(-50%, -50%);
 }
-.icon-cards__2 {
-  margin: o;
+.icon-cards--2 {
+  margin-left: 34%;
+}
+.icon-cards--3 {
+  margin-left: 17%;
+}
+.icon-cards--4 {
+  margin-left: 23.5%;
+}
+.icon-cards--5 {
+  margin-left: 24%;
 }
 .icon-cards__content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transform: translateZ(-182px) rotateY(0);
-  animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
-}
-.icon-cards__content__2 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1281,21 +1286,48 @@ width: 300px;
   transform: rotateY(0) translateZ(182px);
 }
 .icon-cards__item:nth-child(2) {
-  background: url("../assets/images/tech/Logos-tecnologias-react.jpg");
+  background: url("../assets/images/tech/Logos-tecnologias-laravel.jpg");
   transform: rotateY(120deg) translateZ(182px);
 }
 .icon-cards__item:nth-child(3) {
   background: url("../assets/images/tech/Logos-tecnologias-django.jpg");
   transform: rotateY(240deg) translateZ(182px);
 }
-.icon-cards__item__2:nth-child(1) {
-  background: url("../assets/images/tech/Logos-tecnologias-ruby-rails.jpg");
+.icon-cards__item--2:nth-child(1) {
+  background: url("../assets/images/tech/Logos-tecnologias-html5.jpg");
 }
-.icon-cards__item__2:nth-child(2) {
+.icon-cards__item--2:nth-child(2) {
+  background: url("../assets/images/tech/Logos-tecnologias-css3.jpg");
+}
+.icon-cards__item--2:nth-child(3) {
+  background: url("../assets/images/tech/Logos-tecnologias-js.jpg");
+}
+.icon-cards__item--3:nth-child(1) {
+  background: url("../assets/images/tech/Logos-tecnologias-after.jpg");
+}
+.icon-cards__item--3:nth-child(2) {
+  background: url("../assets/images/tech/Logos-tecnologias-illustrator.jpg");
+}
+.icon-cards__item--3:nth-child(3) {
+  background: url("../assets/images/tech/Logos-tecnologias-3dsmax.png");
+}
+.icon-cards__item--4:nth-child(1) {
+  background: url("../assets/images/tech/Logos-tecnologias-angular.jpg");
+}
+.icon-cards__item--4:nth-child(2) {
   background: url("../assets/images/tech/Logos-tecnologias-react.jpg");
 }
-.icon-cards__item__2:nth-child(3) {
-  background: url("../assets/images/tech/Logos-tecnologias-django.jpg");
+.icon-cards__item--4:nth-child(3) {
+  background: url("../assets/images/tech/Logos-tecnologias-phoenix.jpg");
+}
+.icon-cards__item--5:nth-child(1) {
+  background: url("../assets/images/tech/Logos-tecnologias-ionic.jpg");
+}
+.icon-cards__item--5:nth-child(2) {
+  background: url("../assets/images/tech/Logos-tecnologias-android.jpg");
+}
+.icon-cards__item--5:nth-child(3) {
+  background: url("../assets/images/tech/Logos-tecnologias-sass.jpg");
 }
 
 
